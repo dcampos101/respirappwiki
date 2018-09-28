@@ -10,21 +10,26 @@
   </head>
 
   <body>
-  <header>
+    <header>
       <h1 id="titulo">Respirappwiki</h1>
     </header>
-    <main id="principal">
-   
-      <div id="menuprincipal">
-        <ul class="btn-group-vertical">
-          <li type="button" class="btn btn-secondary"><a href="/" data-toggle="tooltip" data-placement="top" title="Inicio">Inicio</li>
-          <li type="button" class="btn btn-secondary"><a href="pages/datamodels" data-toggle="tooltip" data-placement="top" title="Menú Categoria">Categorias</li>
-          
-        </ul>
-      </div>
-      <div id="contenido">
-          <%= yield %>
-      </div>
-    </main>
+    <aside id="menuprincipal">
+      <ul class="btn-group-vertical">
+        <li class="button-overlay"><a id="menu" href="/" data-toggle="tooltip" data-placement="top" title="Inicio">Inicio</li>
+        <li class="section"><hr></li>
+        <li class="button-overlay"><a id="menu" href="/pages/datamodels" data-toggle="tooltip" data-placement="top" title="Modelo de datos">Modelo de datos</li>
+        <li class="button-overlay"><a id="menu" href="/pages/ermodels" data-toggle="tooltip" data-placement="top" title="Diagrama Entidad-Relación">Diagrama Entidad-Relación</li>
+        <li class="section"><hr></li>
+        <li class="button-overlay"><a id="menu" href="/pages/complaints" data-toggle="tooltip" data-placement="top" title="Crear un reporte/Queja">Crear un reporte/queja</li>
+        <li class="button-overlay"><a id="menu" href="/pages/map" data-toggle="tooltip" data-placement="top" title="Mapa de contaminación">Mapa de contaminación</li>
+        <li class="button-overlay"><a id="menu" href="/pages/contacts" data-toggle="tooltip" data-placement="top" title="Contacto">Contactos</li>
+      </ul>
+    </aside>
+
+    
+
+    <footer>
+    </footer>
+
   </body>
 </html>

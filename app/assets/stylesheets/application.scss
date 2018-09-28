@@ -15,88 +15,51 @@
  */
  @import 'bootstrap';
 
+aside{
+  float: left;
+  width: 15%;
+  border: 1px solid;
+  border-color: #055704;
+  position: relative;
+  padding: 10px;
+  background-color: #288a17;
+  top: 0px;
+  bottom: 0px;
+}
 
- #titulo{
-    background: rgb(7, 7, 112);
-   color: white;
-   margin: 0;
-   border: 0;
-   height: 100%;
-   width: 100%;
-   align-content: center;
-   text-align: center;
-    }
-   
-    #principal{
-   background: white;
-   margin: 2px;
-   border: 2px;
-   padding: 0;
-   
-    }
-   
-    #menuprincipal{
-   background: lightgray;
-   color: white;
-   margin: 0px;
-   padding: 0px;
-   width: 29%;
-   height: 100%;
-   display: inline-table;
-   box-sizing: border-box;
-   //min-height: 10px;
-   
-    }
-   
-    #contenido{
-   background: whitesmoke;
-   margin: 0px;
-   padding: 0px;
-   width: 70%;
-   top: 0;
-   height: 100%;
-   display:inline-table;
-   box-sizing: border-box; 
-   //min-height: 10px;
-   //position: relative;
-   //top: 8.5%;
-    }
-    
-    #menuprincipal ul li{
-   font-size: 15pt;
-   margin-bottom: 10px;
-   margin-left: 10px;
-   list-style: none;
-   min-height: 10px;   
-   box-sizing: border-box;
-   height: 50px;
-   
-    }
-    
-    #menuprincipal a{
-     color: white;
-   
-   }
-   
-   #menuprincipal a:hover{
-      
-     text-decoration: none;
-     font-size: 16pt;
-     touch-action: pinch-zoom;
-     }
-   
-   
-    #login{
-     background: rgb(7, 7, 112);
-     font-size: 10pt;
-     height: 25PX;
-     width: 100%;
-   text-align: right;
-   color: white;
-    }
-   /*
-   Otra opcion para dejar el div en una parte especifica de la pantalla
-   position:absolute;
-   top: 12px;
-   right: 33px;
-   */
+aside ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+aside li {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+}
+
+header{
+  height: 69px;
+  min-height: 69px;
+  min-width: 1000px;
+  border-bottom: 5px solid #36383F;
+  box-shadow: 0 1px 1px black;
+  background-color: #2965f2;
+}
+
+.button-overlay{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  display: block;
+  padding: 10px 0;
+}
+
+a #menu {
+  color: #aaf2aa;
+  font-size: 16px;
+}

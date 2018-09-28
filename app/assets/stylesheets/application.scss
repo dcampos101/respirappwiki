@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import 'bootstrap';
+
+
+ #titulo{
+    background: rgb(7, 7, 112);
+   color: white;
+   margin: 0;
+   border: 0;
+   height: 100%;
+   width: 100%;
+   align-content: center;
+   text-align: center;
+    }
+   
+    #principal{
+   background: white;
+   margin: 2px;
+   border: 2px;
+   padding: 0;
+   
+    }
+   
+    #menuprincipal{
+   background: lightgray;
+   color: white;
+   margin: 0px;
+   padding: 0px;
+   width: 29%;
+   height: 100%;
+   display: inline-table;
+   box-sizing: border-box;
+   //min-height: 10px;
+   
+    }
+   
+    #contenido{
+   background: whitesmoke;
+   margin: 0px;
+   padding: 0px;
+   width: 70%;
+   top: 0;
+   height: 100%;
+   display:inline-table;
+   box-sizing: border-box; 
+   //min-height: 10px;
+   //position: relative;
+   //top: 8.5%;
+    }
+    
+    #menuprincipal ul li{
+   font-size: 15pt;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   list-style: none;
+   min-height: 10px;   
+   box-sizing: border-box;
+   height: 50px;
+   
+    }
+    
+    #menuprincipal a{
+     color: white;
+   
+   }
+   
+   #menuprincipal a:hover{
+      
+     text-decoration: none;
+     font-size: 16pt;
+     touch-action: pinch-zoom;
+     }
+   
+   
+    #login{
+     background: rgb(7, 7, 112);
+     font-size: 10pt;
+     height: 25PX;
+     width: 100%;
+   text-align: right;
+   color: white;
+    }
+   /*
+   Otra opcion para dejar el div en una parte especifica de la pantalla
+   position:absolute;
+   top: 12px;
+   right: 33px;
+   */

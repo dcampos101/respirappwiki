@@ -6,9 +6,25 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <%= yield %>
+  <header>
+      <h1 id="titulo">Respirappwiki</h1>
+    </header>
+    <main id="principal">
+   
+      <div id="menuprincipal">
+        <ul class="btn-group-vertical">
+          <li type="button" class="btn btn-secondary"><a href="/" data-toggle="tooltip" data-placement="top" title="Inicio">Inicio</li>
+          <li type="button" class="btn btn-secondary"><a href="pages/datamodels" data-toggle="tooltip" data-placement="top" title="Menú Categoria">Categorias</li>
+          
+        </ul>
+      </div>
+      <div id="contenido">
+          <%= yield %>
+      </div>
+    </main>
   </body>
 </html>

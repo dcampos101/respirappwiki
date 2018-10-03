@@ -10,26 +10,26 @@
   </head>
 
   <body>
+    <!--HEADER-->
     <header>
-      <h1 id="titulo">Respirappwiki</h1>
+      <h1 id="titulo">RespirApp Wiki</h1>
     </header>
-    <aside id="menuprincipal">
-      <ul class="btn-group-vertical">
-        <li class="button-overlay"><a id="menu" href="/" data-toggle="tooltip" data-placement="top" title="Inicio">Inicio</li>
-        <li class="section"><hr></li>
-        <li class="button-overlay"><a id="menu" href="/pages/datamodels" data-toggle="tooltip" data-placement="top" title="Modelo de datos">Modelo de datos</li>
-        <li class="button-overlay"><a id="menu" href="/pages/ermodels" data-toggle="tooltip" data-placement="top" title="Diagrama Entidad-Relación">Diagrama Entidad-Relación</li>
-        <li class="section"><hr></li>
-        <li class="button-overlay"><a id="menu" href="/pages/complaints" data-toggle="tooltip" data-placement="top" title="Crear un reporte/Queja">Crear un reporte/queja</li>
-        <li class="button-overlay"><a id="menu" href="/pages/map" data-toggle="tooltip" data-placement="top" title="Mapa de contaminación">Mapa de contaminación</li>
-        <li class="button-overlay"><a id="menu" href="/pages/contacts" data-toggle="tooltip" data-placement="top" title="Contacto">Contactos</li>
+    <!--MENU-->
+    <aside>
+      <ul>
+        <li><%= link_to 'Modelo de datos', pages_datamodels_path =%></li>
+        <li><%= link_to 'Diagrama Entidad-Relación', pages_ermodels_path =%></li>
+        <li><%= link_to 'Crear un reporte/Queja', pages_complaints_path =%></li>
+        <li><%= link_to 'Mapa de contaminación', pages_maps_path =%></li>
+        <li><%= link_to 'Contacto', pages_contacts_path =%></li>
       </ul>
     </aside>
-
-    
-
+    <!--CONTENT-->
+    <section id="contenido">
+        <%= yield %>
+    </section>
+    <!--FOOTER-->
     <footer>
     </footer>
-
   </body>
 </html>

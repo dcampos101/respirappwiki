@@ -1,5 +1,8 @@
 {
   "name": "respirappwiki",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "nmp": "^1.0.3",
+    "npm": "^6.4.1"
+  }
 }

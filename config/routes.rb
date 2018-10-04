@@ -12,6 +12,5 @@ Rails.application.routes.draw do
   resources :datamodels
   resources :ermodels
   resources :maps
-  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -10,26 +10,40 @@
   </head>
 
   <body>
-    <!--HEADER-->
-    <header>
-      <h1 id="titulo">RespirApp Wiki</h1>
-    </header>
     <!--MENU-->
-    <aside>
-      <ul>
-        <li><%= link_to 'Modelo de datos', pages_datamodels_path =%></li>
-        <li><%= link_to 'Diagrama Entidad-Relación', pages_ermodels_path =%></li>
-        <li><%= link_to 'Crear un reporte/Queja', pages_complaints_path =%></li>
-        <li><%= link_to 'Mapa de contaminación', pages_maps_path =%></li>
-        <li><%= link_to 'Contacto', pages_contacts_path =%></li>
-      </ul>
-    </aside>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <%= link_to 'Inicio', welcome_index_path, class:"navbar-brand" =%>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <%= link_to 'Modelo de datos', pages_datamodels_path, class:"nav-link" =%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Diagrama Entidad-Relación', pages_ermodels_path, class:"nav-link" =%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Crear un reporte/Queja', pages_complaints_path, class:"nav-link" =%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Mapa de contaminación', pages_maps_path, class:"nav-link" =%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Contacto', pages_contacts_path, class:"nav-link" =%>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!--CONTENT-->
     <section id="contenido">
         <%= yield %>
     </section>
     <!--FOOTER-->
-    <footer>
-    </footer>
+    
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+
   </body>
 </html>

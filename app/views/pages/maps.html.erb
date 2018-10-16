@@ -1,5 +1,20 @@
-<h1>Mapa de Contaminacion</h1>
-
-<div id="regq">
-<%= image_tag('MapaContaminacion.jpg', :alt => "modelo", size: "300x450", align: "center") %>
+<div class="jumbotron container-fluid">
+    <h1>Mapa de Contaminacion</h1>
+    <p class="lead">Donde los usuarios pueden ver un mapa con la calidad del aire de la zona.</p>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-md-2">
+            <%= image_tag('MapaContaminacion.jpg', :alt => "modelo", size: "300x450", align: "center") %>
+        </div>
+        <div class="col-md-8">
+            <p>Podrá buscar el lugar donde se ubica entiempo real, para no tener que digitar una dirección, o simplemente de clic en el lugar del mapa donde desea ubicarse y/o reportear un caso de contaminación.</p>
+            <p>Con esta función los usuarios de la aplicación podrán ver los puntos donde las personas han registrado algún tipo de contaminación de aire, mostrando las concentraciones mas grandes de contaminación ya sea por humo, basuras, o transporte.</p>
+            <p>Desde aquí le será más facil a los futuros administradores de la plataforma poder determinar planes de acción sobre ciertas zonas de la localidad, simplemente con ver en que lugar la gente se queja mucho más por los problemas de calidad del aire.</p>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="alert alert-dismissible alert-warning">
+        <h4 class="alert-heading"><strong>Para implementar:</strong></h4>
+        <p>Queremos crear un mapa de calor donde muestre las zonas donde mas concentración de reportes haya y que esta se muestre mas densa, onde los reportes sean mas críticos, de esta mnera se peude visualizar de forma mas visual los puntos donde la concentración es más alta.</p>
+    </div>
 </div>

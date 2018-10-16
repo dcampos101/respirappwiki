@@ -1,7 +1,28 @@
-<h1>Registro de Quejas</h1>
-
-<div id="regq">
-<%= image_tag('RegQuejas.jpg', :alt => "modelo", size: "300x450", align: "center") %>
+<div class="jumbotron container-fluid">
+    <h1>Registro de Quejas</h1>
+    <p class="lead">La función base de la apliación para reportar.</p>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <%= image_tag('RegQuejas.jpg', :alt => "modelo", size: "300x450", align: "center") %>
+        </div>
+        <div class="col-md-6">
+            <p>En esta pantalla el usuario puede seleccionar una ubicación en un mapa y de inmediato comnezar a registrar información sobre el reporte que desea crear, donde deberá indicar:</p>
+            <ul>
+                <li><strong>Nivel de contaminación detectado: </strong> Indica si el nivel de contaminación es alto, medio o bajo.</li>
+                <li><strong>Tipo de contaminación: </strong> Se indica si es contaminación por basuras, empresas/comercio o transporte.</li>
+                <li><strong>Dirección: </strong> Dirección donde quiere repotar un problema de contaminación.</li>
+                <li><strong>Localidad: </strong> Dependiendo de la dirección, se determina este item, de lo contrario el usuario podrá modificarlo.</li>
+                <li><strong>Zona: </strong> Dependiendo de la dirección, se determina este item, de lo contrario el usuario podrá modificarlo.</li>
+                <li><strong>Barrio: </strong> Dependiendo de la dirección, se determina este item, de lo contrario el usuario podrá modificarlo.</li>
+                <li><strong>Comentario: </strong> Una descripción de o q    ue peude ver el usuario en el lugar del reporte.</li>
+                <li><strong>Foto: </strong> Puede tomar una foto y cargarla al reporte a crear, dando más información a las autoridades que van a reisar dicho reporte.</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="alert alert-dismissible alert-warning">
+        <h4 class="alert-heading"><strong>Para implementar:</strong></h4>
+        <p>Identificar barrios, zonas, localidades de acuerdo a la dirección o a la geolocalización de la persona en el momento del reporte.</p>
+    </div>
 </div>
-
-

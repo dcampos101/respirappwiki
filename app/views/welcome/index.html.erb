@@ -1,2 +1,49 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="jumbotron">
+    <h1>Bienvenidos a RespirApp!</h1>
+    <p class="lead">Esta pequeña página le permitirá conocer un poco sobre la aplicación.</p>
+    <hr class="my-4">
+    <p>Aprovechando los conocimientos obtenidos en el curso de <strong>FullStack Development</strong>, aprovechamos este para llevar a cabo el desarrollo del reto selecccionado por nuestro grupo: Contaminación en la localidad de Teusaquillo.</p>
+    <p>Pueden seguir los siguientes links para conocer más sobre la aplicación, cada link provee información sobre una función de la aplicación.</p>
+
+    <div class="row">
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Modelo de datos</div>
+            <div class="card-body">
+                <p class="card-text">Una pequeña explicación del modelo de datos usado para la aplicación.</p>
+                <%= link_to 'Clic aquí', pages_datamodels_path, class:"btn btn-primary btn-lg" =%>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Modelo Entidad-Relación</div>
+            <div class="card-body">
+                <p class="card-text">El diseño base del esquema de datos usado en la aplicación.</p>
+                <%= link_to 'Clic aquí', pages_ermodels_path, class:"btn btn-primary btn-lg" =%>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Quejas</div>
+            <div class="card-body">
+                <p class="card-text">Cómo debe un usuario registrar una queja.</p>
+                <%= link_to 'Clic aquí', pages_complaints_path, class:"btn btn-primary btn-lg" =%>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Mapa</div>
+            <div class="card-body">
+                <p class="card-text">Un mapa que permite registrar una queja.</p>
+                <%= link_to 'Clic aquí', pages_maps_path, class:"btn btn-primary btn-lg" =%>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Contactos</div>
+            <div class="card-body">
+                <p class="card-text">Una lista de contactos del distrito, en caso de necesitarla.</p>
+                <%= link_to 'Clic aquí', pages_contacts_path, class:"btn btn-primary btn-lg" =%>
+            </div>
+        </div>
+    </div>
+</div>

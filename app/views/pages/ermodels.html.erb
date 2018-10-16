@@ -1,8 +1,27 @@
-<h1>Modelo Entidad Relacion</h1>
-
-<br>
-
-<div id="moder">
-<%= image_tag('modeloer.jpg', :alt => "modelo", size: "750x750", align: "center") %>
+<div class="jumbotron container-fluid">
+    <h1>Modelo Entidad Relacion</h1>
+    <p class="lead">Diseño de la estructura de objetos que irán a la base de datos.</p>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-md-6">
+            <%= image_tag('modeloer.jpg', :alt => "modelo", size: "750x750", align: "center") %>
+        </div>
+        <div class="col-md-6">
+            <p>La estructura de datos que queremos impliementar consta de objetos básicos para los registros que queremos guardar par alimentar a la aplicación.</p>
+            <ul>
+                <li><strong>Usuario:</strong> Donde guardamos la información usada por devise para autenticar a los usuarios en la aplicación y guardar infomación básica de estos.</li>
+                <li><strong>Reporte:</strong> El objeto donde estará la información mas relevante para la aplicación, ya que almacenará la ubicación y el tipo de contaminación registrada por el usuario.</li>
+                <li><strong>Tipo de reporte:</strong> Un pequeño catálogo que guarda el tipo de contaminación que puede elegir un usuario, sea contaminación por transporte público, fabricas o comercios o basuras.</li>
+                <li><strong>Nivel de Contaminación:</strong> Niveles alto, medio y bajo que peude usar el usuario para indicar la gravedad en el nivel de contaminación que reporta.</li>
+                <li><strong>Barrio:</strong> Barrio en donde se reporta el incidente de contaminación.</li>
+                <li><strong>Zona:</strong> Zona en donde se reporta el incidente de contaminación.</li>
+                <li><strong>Localidad:</strong> Localidad en donde se reporta el incidente de contaminación.</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="alert alert-dismissible alert-warning">
+        <h4 class="alert-heading"><strong>Para implementar:</strong></h4>
+        <p>Posiblemente haya cambios al modelo inicial de acuerdo a lo que encontremos durante el desarrollo de la aplicación.</p>
+    </div>
 </div>
-
